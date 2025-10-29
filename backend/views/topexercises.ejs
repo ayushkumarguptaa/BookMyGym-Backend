@@ -1,0 +1,17 @@
+<% layout('./Listings/boilerplate') %>
+
+<div class="flex flex-wrap">
+    <% for(let val of datas){ %>
+     <div class="col col ml-[3%] max-w-[15em] max-h-[15em] border-bottom">
+    <div class="card">
+      <img src="<%= val.image %>" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"><%= val.title %></h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+      </div>
+    </div>
+  </div>
+
+  <% } %>
+
+</div>

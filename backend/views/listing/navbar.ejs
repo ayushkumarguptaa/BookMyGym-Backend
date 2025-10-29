@@ -1,0 +1,22 @@
+<ul class="nav justify-content-center pb-2 ">
+  <!-- <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">Active</a>
+  </li> -->
+  <li class="nav-item">
+    <a class="nav-link" href="#">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Offers</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Locations</a>
+  </li>
+    <% if(!curUser){ %>
+  <li class="nav-item">
+    <a class="nav-link" href="/gymnastic/user/signup">Signup</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/gymnastic/user/login">login</a>
+  </li>
+      <% } %>
+</ul>

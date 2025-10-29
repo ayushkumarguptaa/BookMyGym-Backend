@@ -1,0 +1,36 @@
+<% layout('./Listings/boilerplate') %>
+
+<script>
+
+    const coordinate= <%- JSON.stringify(fltrdata.coordinate) %>
+
+</script>
+
+<div class="row p-[8rem]">
+
+        <div class="col-8 offset-2 flex ">
+
+            <div class="w-[60%]">
+                <img src="<%= fltrdata.image %>" alt="" class="  object-cover rounded-xl">
+            </div>
+            <div class="p-[3rem] pt-[3em]">
+                <p> <strong>Title:</strong> <%= fltrdata.name %></p>
+                <address> <strong>Address:</strong> <%= fltrdata.address %>, <%= fltrdata.city %>, <%= fltrdata.state %></address>
+                <p> <strong>Shift Time:</strong> <%= fltrdata.hours %></p>
+                <p> <strong>Price/month:</strong> &#8377 <%= fltrdata.price.toLocaleString("en-IN") %></p>
+                <form action="/gymnastic/user/book" method="get">
+                    <input type="submit" value="Book" class="btn btn-primary">
+                </form>
+
+            </div>
+
+        </div>
+        <hr>
+        <!-- MAP HTML -->
+        <div class="col-8 offset-2">
+            <div id="map"></div>
+        </div>
+</div>
+
+<!-- MAP JS SCRIPT -->
+    <script src="/js/map.js"></script>

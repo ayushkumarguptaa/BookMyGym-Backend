@@ -1,0 +1,37 @@
+
+body{
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 2px solid black; */
+
+    flex-direction: column;
+    min-height: 100vh;
+}
+.cont{
+    flex:1;
+    /* border: 2px solid black; */
+}
+
+
+
+.link-primary{
+    text-decoration: none !important;
+    font-weight:500 !important;
+}
+.footer{
+    margin-left: 10px;
+}
+#map{
+    height: 400px;
+    width: 800px;
+    border-radius: 3% !important;
+}
+.card-text{
+    text-decoration: none !important;
+}
+.anc{
+    text-decoration: none !important;
+}
