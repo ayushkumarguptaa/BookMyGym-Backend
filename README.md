@@ -1,4 +1,4 @@
-This is a Hotel Booking Platform 
+This is a Gym Booking Platform 
 
 Tech stack used:-
 Frontend 
